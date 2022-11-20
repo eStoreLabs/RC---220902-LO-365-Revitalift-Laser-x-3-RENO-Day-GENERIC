@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* Gotham Black */
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('fonts/Gotham-Black/Gotham-Black-Regular.eot');
+  src: url('fonts/Gotham-Black/Gotham-Black-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/Gotham-Black/Gotham-Black-Regular.woff2') format('woff2'),
+    url('fonts/Gotham-Black/Gotham-Black-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Gotham Black Italic */
+@font-face {
+  font-family: 'Gotham Black Italic';
+  src: url('fonts/Gotham-Black-Italic/Gotham-Black-Italic.eot');
+  src: url('fonts/Gotham-Black-Italic/Gotham-Black-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/Gotham-Black-Italic/Gotham-Black-Italic.woff2') format('woff2'),
+    url('fonts/Gotham-Black-Italic/Gotham-Black-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Gotham Bold */
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url('fonts/Gotham-Bold/Gotham-Bold.eot');
+  src: url('fonts/Gotham-Bold/Gotham-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/Gotham-Bold/Gotham-Bold.woff2') format('woff2'),
+    url('fonts/Gotham-Bold/Gotham-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Gotham Book */
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('fonts/Gotham-Book/Gotham-Book-Regular.eot');
+  src: url('fonts/Gotham-Book/Gotham-Book-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/Gotham-Book/Gotham-Book-Regular.woff2') format('woff2'),
+    url('fonts/Gotham-Book/Gotham-Book-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$regular: 'Gotham Book', sans-serif;
+$pink: #e2a9aa;
+$dark-orange: #f99201;
+$black: #000000;
+$green: #146b30;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+@mixin img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-garnier.es-garnier {
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 998px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: $black;
+  background-color: #fff;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $regular;
+    color: #111;
+  }
+
+  .es-kv {
+  }
+
+  .es-info {
+  }
+
+  .es-pack {
+  }
+
+  .es-cross {
+  }
+
+  .es-footer {
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sliderleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 100, 34, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(2, 105, 2, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 190, 61, 0);
+  }
+}
+
+#es-garnier.es-garnier .es-cross__single:hover .es-cross__img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}

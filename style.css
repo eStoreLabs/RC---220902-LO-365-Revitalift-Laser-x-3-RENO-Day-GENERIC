@@ -1,0 +1,131 @@
+/* Gotham Black */
+@font-face {
+  font-family: "Gotham Black";
+  src: url("fonts/Gotham-Black/Gotham-Black-Regular.eot");
+  src: url("fonts/Gotham-Black/Gotham-Black-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Black/Gotham-Black-Regular.woff2") format("woff2"), url("fonts/Gotham-Black/Gotham-Black-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Gotham Black Italic */
+@font-face {
+  font-family: "Gotham Black Italic";
+  src: url("fonts/Gotham-Black-Italic/Gotham-Black-Italic.eot");
+  src: url("fonts/Gotham-Black-Italic/Gotham-Black-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Black-Italic/Gotham-Black-Italic.woff2") format("woff2"), url("fonts/Gotham-Black-Italic/Gotham-Black-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Gotham Bold */
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("fonts/Gotham-Bold/Gotham-Bold.eot");
+  src: url("fonts/Gotham-Bold/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Bold/Gotham-Bold.woff2") format("woff2"), url("fonts/Gotham-Bold/Gotham-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Gotham Book */
+@font-face {
+  font-family: "Gotham Book";
+  src: url("fonts/Gotham-Book/Gotham-Book-Regular.eot");
+  src: url("fonts/Gotham-Book/Gotham-Book-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Book/Gotham-Book-Regular.woff2") format("woff2"), url("fonts/Gotham-Book/Gotham-Book-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#es-garnier.es-garnier {
+  font-family: "Gotham Book", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 998px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #000000;
+  background-color: #fff;
+}
+#es-garnier.es-garnier * {
+  box-sizing: border-box;
+}
+#es-garnier.es-garnier h2,
+#es-garnier.es-garnier h3,
+#es-garnier.es-garnier h4,
+#es-garnier.es-garnier h5 {
+  font-family: "Gotham Book", sans-serif;
+  color: #111;
+}
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes sliderleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes sliderleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 100, 34, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(2, 105, 2, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 190, 61, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 100, 34, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(2, 105, 2, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 190, 61, 0);
+  }
+}
+#es-garnier.es-garnier .es-cross__single:hover .es-cross__img {
+  transform: scale(1.05);
+}/*# sourceMappingURL=style.css.map */
