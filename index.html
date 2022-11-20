@@ -4,25 +4,421 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loreal</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="es-garnier" id="es-garnier">
-      <section class="es-kv"></section>
+    <div class="es-loreal" id="es-loreal">
+      <section class="es-kv">
+        <div class="es-kv__logo"></div>
+        <div class="es-kv__packshot">
+          <img
+            class="es-kv__packshot-img"
+            src="./images/kv-bg.png"
+            alt="Revitalift Laser X3"
+          />
+        </div>
+        <div class="es-kv__title-group">
+          <h2 class="es-kv__title">
+            <span>-7 lat</span>
+            widoczności zmarszczek w 6 miesięcy<sup>*</sup>
+          </h2>
+          <span class="es-kv__subtitle"> Działa tak, jak obiecuje </span>
+          <span class="es-kv__label">Nowa formuła</span>
+        </div>
+      </section>
 
-      <section class="es-info"></section>
+      <section class="es-info">
+        <h3 class="es-info__title">Jeden krem - potrójne działanie</h3>
+        <div class="es-info__container">
+          <p class="es-info__item">
+            <span class="es-info__number">1</span>
+            <strong>Wygładza </strong>zmarszczki
+          </p>
+          <p class="es-info__item">
+            <span class="es-info__number">2</span>
+            <strong>Ujędrnia </strong>skórę
+          </p>
+          <p class="es-info__item">
+            <span class="es-info__number">3</span>
+            <strong>Rozświetla</strong>
+          </p>
+        </div>
+      </section>
 
-      <section class="es-ingredients"></section>
+      <section class="es-ingredients">
+        <h3 class="es-ingredients__title">
+          Wzbogacony o topowe składniki aktywne
+          <strong>polecane przez dermatologów</strong>
+        </h3>
+        <div class="es-ingredients__wrapper">
+          <div class="es-ingredients__image-container">
+            <img
+              class="es-ingredients__image"
+              src="./images/ingredients.png"
+              alt="Składniki aktywne"
+            />
+          </div>
+          <div class="es-ingredients__text-container">
+            <div class="es-ingredients__item">
+              <div class="es-ingredients__item-description">
+                <h3 class="es-ingredients__item-title">
+                  Witamina CG<sup>** </sup>
+                </h3>
 
-      <section class="es-reasons"></section>
+                <p class="es-ingredients__item-description">
+                  Pomaga rozświetlić skórę i widocznie wyrównać jej koloryt.
+                </p>
+              </div>
+            </div>
 
-      <section class="es-feedback"></section>
+            <div class="es-ingredients__item">
+              <div class="es-ingredients__item-description">
+                <h3 class="es-ingredients__item-title">Kwas hialuronowy</h3>
 
-      <section class="es-slider"></section>
+                <p class="es-ingredients__item-description">
+                  Błyskawicznie nawilża i ujędrnia skórę.
+                </p>
+              </div>
+            </div>
 
-      <section class="es-video"></section>
+            <div class="es-ingredients__item">
+              <div class="es-ingredients__item-description">
+                <h3 class="es-ingredients__item-title">Pro-retinol</h3>
 
-      <section class="es-cross"></section>
+                <p class="es-ingredients__item-description">
+                  Pomaga wygładzić zmarszczki i odnowić teksturę skóry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="es-reasons">
+        <h3 class="es-reasons__title">
+          4 powody, dla których warto przetestować
+          <strong>Revitalift Laser X3</strong>
+        </h3>
+        <div class="es-reasons__wrapper">
+          <div class="es-reasons__text-content">
+            <p class="es-reasons__item">
+              <span class="es-reasons__number">1</span>
+              <strong>Szybko</strong> się wchłania
+            </p>
+            <p class="es-reasons__item">
+              <span class="es-reasons__number">2</span>
+              <strong>Nietłusty </strong> i nieklejący się
+            </p>
+            <p class="es-reasons__item">
+              <span class="es-reasons__number">3</span>
+              Odżywcza, <strong>lekka konsystencja</strong>
+            </p>
+            <p class="es-reasons__item">
+              <span class="es-reasons__number">3</span>
+              Ponieważ, <strong>jesteś tego warta</strong>
+            </p>
+          </div>
+          <div class="es-reasons__image-content">
+            <img
+              class="es-reasons__image"
+              src="./images/reasons.png"
+              alt="Revitalift laser X3 obrazek"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="es-feedback">
+        <div class="es-feedback__wrapper">
+          <div class="es-feedback__image-content">
+            <img
+              class="es-feedback__image"
+              src="./images/feedback.png"
+              alt="Kasia Hubińska"
+            />
+            <p class="es-feedback__image-title">
+              kasia hubińska <span>lat 55, projektantka ze Szczecina</span>
+            </p>
+          </div>
+          <div class="es-feedback__text-content">
+            <h3 class="es-feedback__title">
+              Polki potwierdzają- po prostu działa
+            </h3>
+            <div class="es-feedback__items-group">
+              <img
+                class="es-feedback__image"
+                src="./images/points.png"
+                alt="Kropki"
+              />
+              <div class="es-feedback__item">
+                <div class="es-feedback__item-title">natychmiast</div>
+                <div class="es-feedback__item-description">
+                  Skóra jest odczuwalnie nawilżona.
+                </div>
+              </div>
+              <div class="es-feedback__item">
+                <div class="es-feedback__item-title">Po 1 tygodniu:</div>
+                <div class="es-feedback__item-description">
+                  Zmarszczki i drobne linie są widocznie zredukowane.
+                </div>
+              </div>
+              <div class="es-feedback__item">
+                <div class="es-feedback__item-title">Po 6 miesięcach:</div>
+                <div class="es-feedback__item-description">
+                  -7 lat widoczności zmarszczek*
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="es-slider">
+        <h3 class="es-slider__title">
+          DLACZEGO KWAS HIALURONOW<br />
+          <strong>JEST TAK ISTOTNY W PIELĘGNACJI ANTI&#8209;AGE?</strong>
+        </h3>
+        <div class="es-slider__wrapper">
+          <div class="es-slider__content">
+            <div class="es-slider__persona">
+              <div class="es-slider__photo">
+                <img
+                  src="./images/expert-photo.png"
+                  alt=""
+                  class="es-slider__img"
+                />
+              </div>
+              <div class="es-slider__photo">
+                <img
+                  src="./images/expert-sign.png"
+                  alt=""
+                  class="es-slider__img"
+                />
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="es-slider__slides">
+                <div class="es-slick-carousel">
+                  <div class="swiper-slide">
+                    <div class="es-slider__slide">
+                      <div class="es-slider__number">1</div>
+                      <p class="es-slider__text">
+                        <strong>Kwas hialuronowy</strong> jest jednym z
+                        podstawowych składników aktywnych każdej pielęgnacji
+                        anti-ageing. Występuje on fizjologicznie w naszym
+                        organizmie od urodzenia, ale niestety, z wiekiem jego
+                        poziom spada. Jego główne działanie to ogromna zdolność
+                        wiązania wody w skórze właściwej. Przy systematycznym
+                        stosowaniu dba o prawidłowe nawilżenie skóry, redukuje
+                        zmarszczki i przywraca jej blask.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="es-slider__slide">
+                      <div class="es-slider__number">2</div>
+                      <p class="es-slider__text">
+                        <strong>Witamina Cg,</strong> czyli pochodna Witaminy C,
+                        jest silnym antyoksydantem. Dzięki swoim właściwościom
+                        przeciwutleniającym zwiększa działanie ochronne
+                        kosmetyków z filtrami przeciwsłonecznymi. Ta postać
+                        witaminy C pomaga rozświetlić skórę oraz widocznie
+                        wyrównać jej koloryt. Jest także często stosowana w
+                        produktach przeznaczonych do pielęgnacji anti-aging,
+                        skupiającej się na profilaktyce przeciwzmarszczkowej.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="es-slider__slide">
+                      <div class="es-slider__number">3</div>
+                      <p class="es-slider__text">
+                        <strong>Pro-retinol</strong> jest najdelikatniej
+                        działającą formą witaminy A stosowaną w kosmetyce, która
+                        dobrze się sprawdza nawet w przypadku cery wrażliwej. To
+                        składnik aktywny, używany w pielęgnacji anti-aging,
+                        który jest bardzo lubiany przez dermatologów. Przede
+                        wszystkim ze względu na swoje wielokierunkowe działanie.
+                        Pro-retinol nie tylko pomaga wygładzić zmarszczki, ale
+                        również wspomaga regenerację skóry, odnowienie jej
+                        struktury i przywrócenie jędrności.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-pagination"></div>
+              <div class="slick-button-prev">
+                <div class="es-slider__arrow">
+                  <img
+                    src="./images/arrow-left.png"
+                    alt=""
+                    class="es-slider__img"
+                  />
+                </div>
+              </div>
+              <div class="slick-button-next">
+                <div class="es-slider__arrow">
+                  <img
+                    src="./images/arrow-right.png"
+                    alt=""
+                    class="es-slider__img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="es-video">
+        <div class="es-video__wrapper">
+          <video class="es-video__player" src="./video/" id="player"></video>
+          <div class="es-video__play-button">
+            <img
+              class="es-video__image-icon"
+              src="./images/player-icon.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="es-cross">
+        <div class="es-cross__container">
+          <h3 class="es-cross__title">
+            <strong>Twoja</strong> codzienna rutyna przeciwzmarszczkowa
+            <strong>z Revitalift Laser</strong>
+          </h3>
+          <div class="es-cross__wrapper-day">
+            <div class="es-cross__wrapper-group">
+              <h4 class="es-cross__wrapper-title">poranek</h4>
+              <img src="./images/morning-icon.png" alt="Poranek ikona" />
+            </div>
+            <div class="es-cross__single">
+              <div class="es-cross__packshot es-cross__packshot--1">
+                <img
+                  class="es-cross__img"
+                  src="./images/cross-1.png"
+                  alt="Revitalift Laser X3 Serum"
+                />
+              </div>
+              <p class="es-cross__name">Revitalift Laser X3 Serum</p>
+              <p class="es-cross__subtitle">
+                Na dokładnie oczyszczoną skórę zaaplikuj serum, które wygładza
+                skórę i dodaje jej blasku.
+              </p>
+              <a href="" class="es-cross__button">Kup teraz</a>
+            </div>
+            <div class="es-cross__single">
+              <div class="es-cross__packshot es-cross__packshot--2">
+                <img
+                  class="es-cross__img"
+                  src="./images/cross-2.png"
+                  alt="Revitalift Laser X3 Krem pod oczy"
+                />
+              </div>
+              <p class="es-cross__name">Revitalift Laser X3 Krem pod oczy</p>
+              <p class="es-cross__subtitle">
+                Za pomocą aplikatora rozprowadź krem aż do całkowitego
+                wchłonięcia.
+              </p>
+              <a href="" class="es-cross__button">Kup teraz</a>
+            </div>
+            <div class="es-cross__single">
+              <div class="es-cross__packshot es-cross__packshot--3">
+                <img
+                  class="es-cross__img"
+                  src="./images/cross-3.png"
+                  alt="Revitalift Laser X3 Krem na dzień"
+                />
+              </div>
+              <p class="es-cross__name">Revitalift Laser X3 Krem na dzień</p>
+              <p class="es-cross__subtitle">
+                Jako ostatni krok nałoż na twarz krem na dzień , który pomaga
+                wygładzić zmarszczki, ujędrnić skórę i zredukować przebarwienia.
+              </p>
+              <a href="" class="es-cross__button">Kup teraz</a>
+            </div>
+          </div>
+          <div class="es-cross__wrapper-evening">
+            <div class="es-cross__wrapper-group">
+              <h4 class="es-cross__wrapper-title">wieczór</h4>
+              <img src="./images/morning-icon.png" alt="Poranek ikona" />
+            </div>
+            <div class="es-cross__single">
+              <div class="es-cross__packshot es-cross__packshot--1">
+                <img
+                  class="es-cross__img"
+                  src="./images/cross-4.png"
+                  alt="Revitalift Laser X3 Serum"
+                />
+              </div>
+              <p class="es-cross__name">Revitalift Laser X3 Serum</p>
+              <p class="es-cross__subtitle">
+                Na dokładnie oczyszczoną skórę zaaplikuj serum, które wygładza
+                skórę i dodaje jej blasku.
+              </p>
+              <a href="" class="es-cross__button">Kup teraz</a>
+            </div>
+            <div class="es-cross__single">
+              <div class="es-cross__packshot es-cross__packshot--2">
+                <img
+                  class="es-cross__img"
+                  src="./images/cross-5.png"
+                  alt="Revitalift Laser X3 Krem na noc"
+                />
+              </div>
+              <p class="es-cross__name">Revitalift Laser X3 Krem na noc</p>
+              <p class="es-cross__subtitle">
+                Następnie nałoż na twarz, szyję i dekolt przeciwzmarszczkowy
+                krem na noc.
+              </p>
+              <a href="" class="es-cross__button">Kup teraz</a>
+            </div>
+            <div class="es-cross__single">
+              <div class="es-cross__packshot es-cross__packshot--3">
+                <img
+                  class="es-cross__img"
+                  src="./images/cross-6.png"
+                  alt="Revitalift Laser X3 Maska w płachcie"
+                />
+              </div>
+              <p class="es-cross__name">Revitalift Laser X3 Maska w płachcie</p>
+              <p class="es-cross__subtitle">
+                Dla osiągnięcia natychmiastowego efektu zastosuj maskę. Nałóż na
+                oczyszczoną skórę twarzy i pozostaw na 15 minut. Stosuj jako
+                intensywną pielęgnację uzupełniającą codzienną rutynę.
+              </p>
+              <a href="" class="es-cross__button">Kup teraz</a>
+            </div>
+          </div>
+          <p class="es-cross__disclaimer">
+            <sup>*</sup>Badanie kliniczne na 97 osobach <br />
+            <sup>**</sup>Pochodna witaminy C<br />
+          </p>
+        </div>
+      </section>
     </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./scripts/slider.js"></script>
   </body>
 </html>
