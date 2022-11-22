@@ -48,6 +48,18 @@
   font-style: normal;
 }
 
+/* Gotham Light */
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('fonts/Gotham-Light/Gotham-Light-Regular.eot');
+  src: url('fonts/Gotham-Light/Gotham-Light-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/Gotham-Light/Gotham-Light-Regular.woff2') format('woff2'),
+    url('fonts/Gotham-Light/Gotham-Light-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 $regular: 'Gotham Book', sans-serif;
 $pink: #e2a9aa;
 $black: #000000;
@@ -155,7 +167,7 @@ body {
   }
 
   .es-info {
-    padding: 50px 0;
+    padding: 50px 0 0;
 
     &__inner {
       text-align: center;
@@ -197,6 +209,38 @@ body {
       font-weight: bold;
       color: #fff;
       opacity: 20%;
+    }
+  }
+
+  .es-ingredients {
+    padding: 50px 0 0;
+    background-color: #f7f7f8;
+
+    &__title {
+      @include text;
+      margin-bottom: 60px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Gotham Light', sans-serif;
+      font-weight: normal;
+    }
+
+    &__image {
+      @include img;
+    }
+
+    &__text-container {
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+
+    &__item-title {
+      @include text;
+      padding-bottom: 10px;
+      font-size: 18px;
+      font-family: 'Gotham Bold', sans-serif;
+      border-bottom: 4px solid $red;
+      text-transform: uppercase;
     }
   }
 

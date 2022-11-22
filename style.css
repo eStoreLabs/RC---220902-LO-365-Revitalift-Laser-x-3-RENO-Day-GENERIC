@@ -30,6 +30,14 @@
   font-weight: 400;
   font-style: normal;
 }
+/* Gotham Light */
+@font-face {
+  font-family: "Gotham Light";
+  src: url("fonts/Gotham-Light/Gotham-Light-Regular.eot");
+  src: url("fonts/Gotham-Light/Gotham-Light-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Light/Gotham-Light-Regular.woff2") format("woff2"), url("fonts/Gotham-Light/Gotham-Light-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 html,
 body {
   margin: 0;
@@ -118,7 +126,7 @@ body {
   font-weight: bold;
 }
 #es-loreal.es-loreal .es-info {
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 #es-loreal.es-loreal .es-info__inner {
   text-align: center;
@@ -166,6 +174,45 @@ body {
   font-weight: bold;
   color: #fff;
   opacity: 20%;
+}
+#es-loreal.es-loreal .es-ingredients {
+  padding: 50px 0 0;
+  background-color: #f7f7f8;
+}
+#es-loreal.es-loreal .es-ingredients__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Gotham Light", sans-serif;
+  font-weight: normal;
+}
+#es-loreal.es-loreal .es-ingredients__image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-loreal.es-loreal .es-ingredients__text-container {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+#es-loreal.es-loreal .es-ingredients__item-title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: "Gotham Bold", sans-serif;
+  border-bottom: 4px solid #eb0812;
+  text-transform: uppercase;
 }
 #es-loreal.es-loreal .es-cross__packshot {
   position: relative;
