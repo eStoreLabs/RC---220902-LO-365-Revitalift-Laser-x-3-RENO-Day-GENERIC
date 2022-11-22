@@ -58,6 +58,65 @@ body {
   font-family: "Gotham Book", sans-serif;
   color: #111;
 }
+#es-loreal.es-loreal .es-kv__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-loreal.es-loreal .es-kv__logo {
+  margin: 16px 0;
+  opacity: 0;
+  -webkit-animation: slidedown 0.6s ease forwards;
+  animation: slidedown 0.6s ease forwards;
+}
+#es-loreal.es-loreal .es-kv__packshot-img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+#es-loreal.es-loreal .es-kv__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Gotham Book";
+  font-weight: 400;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+#es-loreal.es-loreal .es-kv__title--red {
+  display: block;
+  font-family: "Gotham Black";
+  font-size: 56px;
+  color: #eb0812;
+}
+#es-loreal.es-loreal .es-kv__title--strong {
+  font-family: "Gotham Bold";
+  font-weight: 700;
+}
+#es-loreal.es-loreal .es-kv__subtitle {
+  display: block;
+  font-size: 23px;
+  text-align: center;
+}
+#es-loreal.es-loreal .es-kv__label {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 23px;
+  text-align: center;
+  background-color: #eb0812;
+  color: #fff;
+  border: 1px solid #eb0812;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 #es-loreal.es-loreal .es-cross__packshot {
   position: relative;
   z-index: 1;

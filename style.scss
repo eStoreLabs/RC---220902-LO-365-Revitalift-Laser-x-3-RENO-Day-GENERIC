@@ -50,9 +50,8 @@
 
 $regular: 'Gotham Book', sans-serif;
 $pink: #e2a9aa;
-$dark-orange: #f99201;
 $black: #000000;
-$green: #146b30;
+$red: #eb0812;
 
 html,
 body {
@@ -100,6 +99,59 @@ body {
   }
 
   .es-kv {
+    &__img {
+      @include img;
+    }
+    &__logo {
+      margin: 16px 0;
+      opacity: 0;
+      -webkit-animation: slidedown 0.6s ease forwards;
+      animation: slidedown 0.6s ease forwards;
+    }
+    &__packshot {
+    }
+    &__packshot-img {
+      @include img;
+      width: 100%;
+    }
+    &__title {
+      @include text;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Gotham Book';
+      font-weight: 400;
+      font-size: 29px;
+      text-transform: uppercase;
+      &--red {
+        display: block;
+        font-family: 'Gotham Black';
+        font-size: 56px;
+        color: $red;
+      }
+      &--strong {
+        font-family: 'Gotham Bold';
+        font-weight: 700;
+      }
+    }
+    &__subtitle {
+      display: block;
+      font-size: 23px;
+      text-align: center;
+    }
+    &__label {
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      // padding: 8px 80px 8px 5px;
+      font-size: 23px;
+      text-align: center;
+      background-color: $red;
+      color: #fff;
+      border: 1px solid $red;
+      border-radius: 7px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
 
   .es-info {
