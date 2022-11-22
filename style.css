@@ -117,6 +117,56 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+#es-loreal.es-loreal .es-info {
+  padding: 50px 0;
+}
+#es-loreal.es-loreal .es-info__inner {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #eb0812;
+}
+#es-loreal.es-loreal .es-info__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin-bottom: 60px;
+  font-size: 25px;
+  color: #fff;
+  font-family: "Gotham Light", sans-serif;
+  font-weight: normal;
+  color: #fff;
+}
+#es-loreal.es-loreal .es-info__item {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+}
+#es-loreal.es-loreal .es-info__item:not(:last-child) {
+  margin-bottom: 100px;
+}
+#es-loreal.es-loreal .es-info__number {
+  position: absolute;
+  font-family: "Gotham Bold";
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin: auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 130px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 20%;
+}
 #es-loreal.es-loreal .es-cross__packshot {
   position: relative;
   z-index: 1;
