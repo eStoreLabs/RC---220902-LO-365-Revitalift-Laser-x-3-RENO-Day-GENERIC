@@ -303,6 +303,96 @@ body {
     }
   }
 
+  .es-feedback {
+    &__wrapper {
+      padding: 25px 0 25px;
+    }
+    &__image {
+      @include img;
+    }
+    &__image-title {
+      @include text;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      font-family: 'Gohtam Bold', sans-serif;
+      font-weight: bold;
+      text-align: center;
+
+      &--normal {
+        font-family: 'Gohtam Book', sans-serif;
+        text-transform: none;
+        font-weight: normal;
+        line-height: 1.4;
+      }
+    }
+
+    &__title {
+      @include text;
+      margin-bottom: 40px;
+      font-size: 25px;
+      text-align: center;
+
+      & strong {
+        font-family: 'Gotham Bold';
+        font-weight: bold;
+      }
+    }
+    &__items-group {
+      display: flex;
+    }
+    &__item-list {
+      // display: flex;
+      // flex-direction: column;
+      padding-left: 40px;
+      list-style: none;
+    }
+    &__item {
+      position: relative;
+      // margin-bottom: 70px;
+      padding-bottom: 70px;
+
+      &::after {
+        content: url('./images/bullet.png');
+        position: absolute;
+        left: -26px;
+        top: 0px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -18px; /* adjust manually */
+        border-left: 4px solid $dark-red;
+        height: 100%;
+        width: 1px;
+        border-radius: 2px;
+      }
+
+      &:first-child:before {
+        top: -30px;
+        height: 200%;
+      }
+      &:last-child:before {
+        height: 75%;
+      }
+    }
+    &__item-wrapper {
+      margin-left: 20px;
+    }
+    &__item-title {
+      @include text;
+      font-family: 'Gotham Bold', sans-serif;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    &__item-description {
+      @include text;
+      // font-family: 'Gotham Light', sans-serif;
+      // font-size: 18px;
+    }
+  }
+
   .es-pack {
   }
 
