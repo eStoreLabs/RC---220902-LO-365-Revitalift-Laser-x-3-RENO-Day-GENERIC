@@ -587,6 +587,9 @@ body {
         background-color: $red;
       }
     }
+    &__img {
+      transition: all 0.3s ease-in-out;
+    }
     &__packshot {
       position: relative;
       margin-bottom: 20px;
@@ -746,6 +749,7 @@ body {
       }
       &__button {
         width: 140px;
+        transition: all 0.3s ease-in-out;
       }
       &__packshot {
         position: relative;

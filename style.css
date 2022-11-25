@@ -609,6 +609,9 @@ body {
 #es-loreal.es-loreal .es-cross__button:hover {
   background-color: #eb0812;
 }
+#es-loreal.es-loreal .es-cross__img {
+  transition: all 0.3s ease-in-out;
+}
 #es-loreal.es-loreal .es-cross__packshot {
   position: relative;
   margin-bottom: 20px;
@@ -749,6 +752,7 @@ body {
   }
   #es-loreal.es-loreal .es-cross__button {
     width: 140px;
+    transition: all 0.3s ease-in-out;
   }
   #es-loreal.es-loreal .es-cross__packshot {
     position: relative;
