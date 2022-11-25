@@ -816,7 +816,6 @@ body {
     .es-reasons {
       &__wrapper {
         display: flex;
-        // justify-content: center;
         align-items: center;
       }
       &__text-content {
@@ -852,8 +851,7 @@ body {
         width: 200px;
       }
       &__group {
-        min-height: initial;
-        height: 250px;
+        height: 330px;
 
         &--wide {
           padding: 40px 18px;
@@ -1000,6 +998,13 @@ body {
       }
       &__text-container {
         margin-top: 80px;
+      }
+    }
+
+    .es-cross {
+      &__group {
+        min-height: initial;
+        height: 270px;
       }
     }
   }
