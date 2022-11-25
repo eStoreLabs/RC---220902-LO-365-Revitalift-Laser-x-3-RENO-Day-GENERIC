@@ -121,8 +121,6 @@ body {
       -webkit-animation: slidedown 0.6s ease forwards;
       animation: slidedown 0.6s ease forwards;
     }
-    &__packshot {
-    }
     &__packshot-img {
       @include img;
       width: 100%;
@@ -165,6 +163,9 @@ body {
       border-radius: 7px;
       text-transform: uppercase;
       font-weight: bold;
+    }
+    &__title-group {
+      animation: slidedown 0.3s ease-in-out;
     }
   }
 
@@ -750,14 +751,11 @@ body {
       &__title {
         max-width: 480px;
       }
-      &__text-container {
-        margin-top: -120px;
-      }
     }
 
     .es-cross {
       &__group {
-        min-height: 329px;
+        min-height: 370px;
       }
       &__cards {
         display: flex;
@@ -784,11 +782,11 @@ body {
         // margin-left: 50px;
 
         &--1::before {
-          top: 125px;
+          top: 94px;
         }
 
         &--2::before {
-          top: 145px;
+          top: 121px;
         }
 
         &--3::before {
@@ -808,9 +806,35 @@ body {
   }
 
   @media screen and (min-width: 650px) {
+    .es-kv {
+      position: relative;
+      &__title-group {
+        position: absolute;
+        left: -2%;
+        top: 16%;
+      }
+      &__title,
+      &__subtitle {
+        padding-left: 20px;
+        text-align: left;
+      }
+      &__label {
+        width: 243px;
+      }
+    }
+
+    .es-info {
+      padding-top: 0;
+    }
     .es-ingredients {
       &__title {
         max-width: none;
+      }
+      &__item {
+        margin-bottom: 70px;
+      }
+      &__item-title {
+        font-size: 21px;
       }
     }
     .es-reasons {
@@ -846,9 +870,40 @@ body {
         max-width: 125%;
       }
     }
+    .es-cross {
+      &__single {
+        width: 200px;
+      }
+      &__group {
+        min-height: initial;
+        height: 250px;
+
+        &--wide {
+          padding: 40px 18px;
+        }
+        &--small {
+          height: 240px;
+        }
+      }
+    }
+    .es-info {
+      &__container {
+        justify-content: center;
+        gap: 100px;
+      }
+    }
   }
 
   @media screen and (min-width: 760px) {
+    .es-kv {
+      &__title-group {
+        left: 3%;
+        top: 25%;
+      }
+      &__label {
+        width: 243px;
+      }
+    }
     .es-slider {
       &__slides {
         width: 500px;
@@ -871,11 +926,45 @@ body {
     }
 
     .es-feedback {
+      &__item {
+        &:first-child:before {
+          top: -52px;
+        }
+      }
+      &__wrapper {
+        padding-bottom: 0;
+      }
       &__image {
         max-width: 100%;
       }
       &__text-content {
+        margin-top: 30px;
         flex-basis: 70%;
+      }
+      &__title {
+        font-size: 31px;
+      }
+    }
+
+    .es-cross {
+      &__wrapper-title {
+        font-size: 23px;
+        margin-right: 10px;
+      }
+      &__cards {
+        gap: 10px;
+      }
+      &__single {
+        width: 100%;
+        max-width: 318px;
+      }
+      &__title-group {
+        width: 270px;
+      }
+    }
+    .es-video {
+      &__image-icon {
+        width: auto;
       }
     }
   }
@@ -897,29 +986,81 @@ body {
         width: 40px;
       }
     }
-
+    .es-info {
+      &__number {
+        top: -80px;
+        left: -15px;
+        font-size: 171px;
+      }
+    }
     .es-reasons {
       &__wrapper {
         margin-top: -100px;
+      }
+      &__number {
+        top: -84px;
+        font-size: 171px;
+      }
+    }
+    .es-ingredients {
+      &__wrapper {
+        margin-top: -50px;
+      }
+      &__item-title {
+        font-size: 23px;
+      }
+      &__item-description {
+        font-size: 17px;
+      }
+      &__text-container {
+        margin-top: 80px;
       }
     }
   }
 
   @media screen and (min-width: 900px) {
+    .es-kv {
+      &__title-group {
+        left: 5.1%;
+        top: 32%;
+      }
+      &__label {
+        width: 308px;
+        padding-left: 20px;
+        text-align: left;
+        // z-index: -1;
+      }
+    }
+
     .es-reasons {
       &__image-content {
-        margin-top: -175px;
+        margin-top: -85px;
       }
       &__text-content {
         flex-basis: 88%;
         margin-left: 50px;
         margin-top: 100px;
-        margin-bottom: 100px;
-        gap: 100px;
+        margin-bottom: 60px;
+        gap: 80px 100px;
         justify-content: center;
       }
       &__item {
         width: 200px;
+      }
+    }
+    .es-cross {
+      &__group {
+        &--small {
+          height: 200px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .es-kv {
+      &__label {
+        width: 340px;
+        border-radius: 7px 0px 0px 7px;
       }
     }
   }
@@ -937,7 +1078,7 @@ body {
   }
 }
 
-@keyframes sliderleft {
+@keyframes slideleft {
   from {
     opacity: 0.3;
     transform: translateX(100px);
