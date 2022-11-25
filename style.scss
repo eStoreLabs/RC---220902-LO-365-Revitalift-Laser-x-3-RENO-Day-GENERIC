@@ -154,7 +154,6 @@ body {
       width: 300px;
       margin: 0 auto;
       padding: 8px 0;
-      // padding: 8px 80px 8px 5px;
       font-size: 23px;
       text-align: center;
       background-color: $red;
@@ -171,13 +170,11 @@ body {
 
   .es-info {
     padding: 50px 0 0;
-
     &__inner {
       text-align: center;
       padding: 50px 0;
       background-color: $red;
     }
-
     &__title {
       @include text;
       margin-bottom: 60px;
@@ -187,18 +184,15 @@ body {
       font-weight: normal;
       color: #fff;
     }
-
     &__item {
       position: relative;
       font-family: 'Gotham Bold', sans-serif;
       font-size: 20px;
       color: #fff;
     }
-
     &__item:not(:last-child) {
       margin-bottom: 100px;
     }
-
     &__number {
       position: absolute;
       font-family: 'Gotham Bold';
@@ -219,7 +213,6 @@ body {
   .es-ingredients {
     padding: 50px 0 25px;
     background-color: #f7f7f8;
-
     &__title {
       @include text;
       max-width: 380px;
@@ -229,22 +222,18 @@ body {
       font-size: 25px;
       font-family: 'Gotham Light', sans-serif;
       font-weight: normal;
-
       &--bold {
         font-family: 'Gotham Bold';
         font-weight: bold;
       }
     }
-
     &__image {
       @include img;
     }
-
     &__text-container {
       padding-top: 20px;
       padding-left: 10px;
     }
-
     &__item-title {
       @include text;
       padding-bottom: 10px;
@@ -257,13 +246,11 @@ body {
 
   .es-reasons {
     background-color: #f7f7f8;
-
     &__inner {
       padding: 25px 0 0;
       text-align: center;
       background-color: $dark-red;
     }
-
     &__title {
       @include text;
       margin-bottom: 60px;
@@ -273,23 +260,17 @@ body {
       font-weight: normal;
       color: #fff;
     }
-
     &__item {
       position: relative;
       font-size: 20px;
       color: #fff;
     }
-
     &__item:not(:last-child) {
       margin-bottom: 100px;
     }
-
     &__number {
-      // position: absolute;
-      // font-family: 'Gotham Bold';
       position: absolute;
       @include text;
-      // margin: auto;
       top: -70px;
       left: 0;
       bottom: 0;
@@ -298,9 +279,6 @@ body {
       font-weight: bold;
       color: #fff;
       opacity: 20%;
-    }
-
-    &__image-content {
     }
     &__image {
       @include img;
@@ -324,7 +302,6 @@ body {
       font-family: 'Gohtam Bold', sans-serif;
       font-weight: bold;
       text-align: center;
-
       &--normal {
         font-family: 'Gohtam Book', sans-serif;
         text-transform: none;
@@ -338,7 +315,6 @@ body {
       margin-bottom: 40px;
       font-size: 25px;
       text-align: center;
-
       & strong {
         font-family: 'Gotham Bold';
         font-weight: bold;
@@ -348,33 +324,27 @@ body {
       display: flex;
     }
     &__item-list {
-      // display: flex;
-      // flex-direction: column;
       padding-left: 40px;
       list-style: none;
     }
     &__item {
       position: relative;
-      // margin-bottom: 70px;
       padding-bottom: 70px;
-
       &::after {
         content: url('./images/bullet.png');
         position: absolute;
         left: -26px;
         top: 0px;
       }
-
       &::before {
         content: '';
         position: absolute;
-        left: -18px; /* adjust manually */
+        left: -18px;
         border-left: 4px solid $dark-red;
         height: 100%;
         width: 1px;
         border-radius: 2px;
       }
-
       &:first-child:before {
         top: -30px;
         height: 200%;
@@ -394,8 +364,6 @@ body {
     }
     &__item-description {
       @include text;
-      // font-family: 'Gotham Light', sans-serif;
-      // font-size: 18px;
     }
   }
 
@@ -404,7 +372,6 @@ body {
     padding-top: 25px;
     padding-bottom: 64px;
     background-color: #f4f5f7;
-
     &__title {
       margin: 0;
       padding: 0;
@@ -417,13 +384,11 @@ body {
       padding: 0 16px;
       line-height: 1.1;
       text-align: center;
-
       &--uppercase {
         font-family: 'Gotham Bold', sans-serif;
         text-transform: uppercase;
       }
     }
-
     &__wrapper {
       padding: 56px 16px 0 16px;
     }
@@ -477,8 +442,26 @@ body {
   .es-video {
     &__wrapper {
       position: relative;
+      width: 80%;
+      margin: auto;
       margin-bottom: 50px;
       background: #f4f5f7;
+    }
+    &__content {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      & iframe {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+      }
     }
     &__player {
       display: block;
@@ -504,6 +487,7 @@ body {
       }
     }
   }
+
   .es-cross {
     &__title {
       @include text;
@@ -513,7 +497,6 @@ body {
     }
     &__wrapper-group {
       position: relative;
-
       &::after {
         content: '';
         width: 100%;
@@ -524,14 +507,9 @@ body {
         top: 50%;
         z-index: 1;
       }
-
       &::after {
         left: 0;
       }
-
-      // &::before {
-      //   right: 0;
-      // }
     }
     &__title-group {
       display: flex;
@@ -557,7 +535,6 @@ body {
     &__wrapper-icon {
       z-index: 2;
     }
-
     &__single {
       display: flex;
       flex-direction: column;
@@ -571,7 +548,6 @@ body {
         margin-bottom: 100px;
       }
     }
-
     &__group {
       padding: 40px 23px;
       border-radius: 8px;
@@ -607,7 +583,6 @@ body {
       border-radius: 8px;
       text-decoration: none;
       text-transform: uppercase;
-
       &:hover {
         background-color: $red;
       }
@@ -616,7 +591,6 @@ body {
       position: relative;
       margin-bottom: 20px;
       z-index: 1;
-      // margin-left: 50px;
 
       &--1::before {
         position: absolute;
@@ -678,11 +652,9 @@ body {
         z-index: -1;
       }
     }
-
     &__img {
       @include img;
     }
-
     &__disclaimer {
       @include text;
       margin-top: 30px;
@@ -702,6 +674,7 @@ body {
         gap: 20px;
       }
     }
+
     .es-info,
     .es-ingredients,
     .es-reasons,
@@ -742,6 +715,7 @@ body {
         font-size: 30px;
       }
     }
+
     .es-ingredients {
       &__wrapper {
         display: flex;
@@ -766,7 +740,6 @@ body {
       &__single {
         width: 175px;
         margin-bottom: 20px;
-
         &:not(:last-child) {
           margin-bottom: 20px;
         }
@@ -774,12 +747,10 @@ body {
       &__button {
         width: 140px;
       }
-
       &__packshot {
         position: relative;
         margin-bottom: 20px;
         z-index: 1;
-        // margin-left: 50px;
 
         &--1::before {
           top: 94px;
@@ -837,6 +808,7 @@ body {
         font-size: 21px;
       }
     }
+
     .es-reasons {
       &__wrapper {
         display: flex;
@@ -854,11 +826,11 @@ body {
           margin-left: 40px;
         }
       }
-
       &__item:not(:last-child) {
         margin-bottom: 20px;
       }
     }
+
     .es-feedback {
       &__wrapper {
         display: flex;
@@ -870,6 +842,7 @@ body {
         max-width: 125%;
       }
     }
+
     .es-cross {
       &__single {
         width: 200px;
@@ -886,6 +859,7 @@ body {
         }
       }
     }
+
     .es-info {
       &__container {
         justify-content: center;
@@ -904,6 +878,7 @@ body {
         width: 243px;
       }
     }
+
     .es-slider {
       &__slides {
         width: 500px;
@@ -947,6 +922,9 @@ body {
     }
 
     .es-cross {
+      &__title {
+        margin-bottom: 65px;
+      }
       &__wrapper-title {
         font-size: 23px;
         margin-right: 10px;
@@ -962,6 +940,7 @@ body {
         width: 270px;
       }
     }
+
     .es-video {
       &__image-icon {
         width: auto;
@@ -986,6 +965,7 @@ body {
         width: 40px;
       }
     }
+
     .es-info {
       &__number {
         top: -80px;
@@ -993,6 +973,7 @@ body {
         font-size: 171px;
       }
     }
+
     .es-reasons {
       &__wrapper {
         margin-top: -100px;
@@ -1002,6 +983,7 @@ body {
         font-size: 171px;
       }
     }
+
     .es-ingredients {
       &__wrapper {
         margin-top: -50px;
@@ -1024,11 +1006,11 @@ body {
         left: 5.1%;
         top: 32%;
       }
+
       &__label {
         width: 308px;
         padding-left: 20px;
         text-align: left;
-        // z-index: -1;
       }
     }
 
@@ -1048,6 +1030,7 @@ body {
         width: 200px;
       }
     }
+
     .es-cross {
       &__group {
         &--small {
@@ -1061,6 +1044,20 @@ body {
       &__label {
         width: 340px;
         border-radius: 7px 0px 0px 7px;
+      }
+    }
+    .es-slider {
+      &__content {
+        padding-bottom: 0;
+      }
+      &__slides {
+        width: 600px;
+      }
+      &__slide {
+        line-height: 1.4;
+      }
+      &__text {
+        font-size: 17px;
       }
     }
   }
@@ -1167,4 +1164,15 @@ body {
 #es-loreal.es-loreal .es-slider__arrow {
   width: 27px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  #es-loreal.es-loreal .es-slider {
+    .slick-button-next {
+      right: -44px;
+    }
+    .slick-button-prev {
+      left: -44px;
+    }
+  }
 }
