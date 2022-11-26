@@ -517,7 +517,7 @@ body {
       justify-content: center;
       margin: 0 auto;
       margin-top: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
       width: 200px;
       padding: 10px;
       border-radius: 8px;
@@ -647,7 +647,7 @@ body {
         position: absolute;
         content: '3';
         font-family: 'Gotham Bold', sans-serif;
-        color: #f9999d;
+        color: #f5666c;
         font-size: 222px;
         top: -100px;
         left: -40px;
@@ -859,6 +859,9 @@ body {
         &--small {
           height: 240px;
         }
+        &--smaller {
+          padding: 40px 12px;
+        }
       }
     }
 
@@ -1044,6 +1047,15 @@ body {
       &__group {
         &--small {
           height: 200px;
+        }
+      }
+      &__button {
+        width: 235px;
+      }
+      &__packshot {
+        &--6::before {
+          top: 90px;
+          left: -85px;
         }
       }
     }
