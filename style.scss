@@ -185,8 +185,8 @@ body {
       color: #fff;
     }
     &__item {
+      font-family: 'Gotham Light', sans-serif;
       position: relative;
-      font-family: 'Gotham Bold', sans-serif;
       font-size: 20px;
       color: #fff;
     }
@@ -195,8 +195,8 @@ body {
     }
     &__number {
       position: absolute;
-      font-family: 'Gotham Bold';
       @include text;
+      font-family: 'Gotham Bold', sans-serif;
       margin: auto;
       position: absolute;
       top: -60px;
