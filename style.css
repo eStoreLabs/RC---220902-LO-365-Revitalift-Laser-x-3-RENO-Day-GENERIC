@@ -992,6 +992,9 @@ body {
     top: 90px;
     left: -85px;
   }
+  #es-loreal.es-loreal .es-cross__title {
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 1000px) {
   #es-loreal.es-loreal .es-kv__label {
